@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, textarea, input {
+    font: 16px/1.2em "Lucida Grande", "Tahoma", sans-serif;
+}
+
+html {
+    background-color: #4F5F35;
+    color: #4F5F35;
+}
+
+body {
+    padding: 0 3em;
+    background: -moz-linear-gradient(center top, #343A2A 0, #4F5F35 70%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#343A2A), color-stop(70%, #4F5F35), to(#4F5F35));
+}
+
+h1 {
+    float: left;
+    margin: .5em .25em .5em 0;
+    font-size: 3em;
+    color: #B5B28A;
+    text-shadow: 0 .1em .25em #041F15;
+}
+
+h2 {
+    font-weight: normal;
+    line-height: 3.6em;
+    color: #B5B28A;
+    text-shadow: 0 .2em .25em #041F15;
+}
+
+body > div {
+    clear: both;
+    margin-bottom: 2em;
+    background-color: #1C2B05;
+    padding: .25em 1em 1em;
+    border: .125em solid #041F15;
+    border-top-width: .5em;
+    -moz-border-radius-bottomright: 3em;
+    -webkit-border-bottom-right-radius: 3em;
+    text-shadow: .1em .1em 0 #041F15;
+    -moz-box-shadow: .1em .1em .25em #041F15;
+    -webkit-box-shadow: .1em .1em .25em #041F15;
+}
+
+h3 {
+    float: left;
+    margin-right: .25em;
+}
+
+p {
+    margin-top: .15em;
+}
+
+form {
+    clear: both;
+    margin: 1em 0 1em 1em;
+}
+
+label {
+    display: block;
+    color: #9BB177;
+    font-weight: bold;
+    margin-bottom: .25em;
+}
+
+input, textarea {
+    border: .1em solid #041F15;
+    padding: .325em;
+    color: #7DA496;
+    width: 30em;
+    background-color: #1F2A26;
+    -moz-box-shadow: .1em .1em .25em #041F15;
+    -webkit-box-shadow: .1em .1em .25em #041F15;
+}
+
+.remaining {
+    font-style: normal;
+    font-size: .75em;
+    display: block;
+    text-align: right;
+    width: 41em;
+}
+
+.remaining strong {
+    color: #A1B187;
+}

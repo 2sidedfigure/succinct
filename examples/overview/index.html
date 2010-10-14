@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    	<title>Succinct</title>
+    	
+    	<link rel="stylesheet" type="text/css" href="css/style.css" />
+    	
+    	<script type="text/javascript" src="../../jquery.js"></script>
+    	<script type="text/javascript" src="../../jquery.succinct.js"></script>
+    	
+    	<script type="text/javascript">
+    	
+    	    $(document).ready(function() {
+    	        $('#sample1').succinct({limit: 15});
+    	        $('#sample2').succinct({limit: 150});
+    	        $('#inputpair input').succinct({limit: 30});
+    	    });
+    	
+    	</script>
+    </head>
+
+    <body>
+        
+        <h1>Succinct</h1>
+        <h2>a jQuery plugin</h2>
+
+        <div id="textinput">
+            <h3>Text Input</h3>
+            <p>Limited to 15 characters</p>
+            <form>
+                <p>
+                    <label for="sample1">Sample input</label>
+                    <input type="text" name="sample1" id="sample1" value="What? Only 15?" />
+                </p>
+            </form>
+        </div>
+        
+        <div id="textareainput">
+            <h3>Textarea Input</h3>
+            <p>Limited to 150 characters</p>
+            <form>
+                <p>
+                    <label for="sample2">Sample textarea</label>
+                    <textarea name="sample2" id="sample2" cols="60" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
+                </p>
+            </form>
+        </div>
+        
+        <div id="inputpair">
+            <h3>Text Input Pair</h3>
+            <p>Each Limited to 30 characters</p>
+            <form>
+                <p>
+                    <label for="sample3">First paired input</label>
+                    <input type="text" name="sample3" id="sample3" value="I'm with that guy down there..." />
+                </p>
+                
+                <p>
+                    <label for="sample4">Second paired input</label>
+                    <input type="text" name="sample4" id="sample4" value="I'm with that guy up there..." />
+                </p>
+            </form>
+        </div>
+        
+    </body>
+</html>
